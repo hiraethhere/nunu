@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/global.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="flex flex-col justify-center margin-center" style="margin: auto 0;">
+            <div style="display: flex; justify-content: center; z-index: 1;">     
+            <h1>
+                    Weight and Volume Converter
+                 </h1>
+                </div>
+                 <p class="subtitle">For Milk and Water</p>
+
+                 <div class="card" style="margin-bottom: -25px;">
+                 <div class="flex flex-row">
+                    <label for="from-value" class="label">From:</label>
+                    <select id="from-value" class="select">
+                        <option value="kg">Kg</option>
+                        <option value="lt">Liter</option>
+                    </select>  
+                    <label for="jenis" class="label" style="margin-left: 15px;">Option:</label>
+                    <select id="jenis" class="select" style="width: 90px;">
+                        <option value="susu">🥛 Milk</option>
+                        <option value="air">💧 Water</option>
+                    </select>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <input type="number" id="num-input" class="input" placeholder="Enter A Number...">
+                </div>
+                </div>
+
+
+                 <div style="display: flex; justify-content: center; z-index: 1;">
+                    <button id="btn-convert" class="btn">
+                        Convert
+                    </button>
+                </div>
+                
+            <div class="card" style="margin-top: -25px;">
+             <div class="flex flex-row">
+                <label for="to-value" class="label">To:</label>
+                <select id="to-value" class="select">
+                    <option value="lt">Liter</option>
+                    <option value="kg">Kg</option>
+                </select>
+             </div>
+
+             <div style="display: flex; justify-content: center;">
+        <div class="result-box">
+        <p id="result" style="margin: 0;"><i style="font-weight: 300; color:rgb(148, 147, 147)">Result...</i></p>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="mesh-gradient">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      <script>
+        gsap.to(".blob1", {
+          x: 100,
+          y: -50,
+          duration: 4,
+          repeat: -1,
+          yoyo: true,
+          ease: "sine.inOut"
+        });
+      
+        gsap.to(".blob2", {
+          x: -80,
+          y: 100,
+          duration: 5,
+          repeat: -1,
+          yoyo: true,
+          ease: "sine.inOut"
+        });
+      
+        gsap.to(".blob3", {
+          x: 120,
+          y: 60,
+          duration: 2,
+          repeat: -1,
+          yoyo: true,
+          ease: "sine.inOut"
+        });
+      </script>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

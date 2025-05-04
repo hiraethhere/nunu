@@ -1,0 +1,177 @@
+body{
+    display: f;
+    padding: 0;
+    margin: 0;
+    background-color: #020747;
+    text-align: center;
+    justify-content: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+h1{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 700;
+    margin-bottom: -30px;
+    font-size: 45px;
+}
+
+.subtitle{
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    color: white;
+    font-weight: 100;
+}
+
+.flex{
+    display: flex;
+    gap: 8px;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+.container{
+    height: 100dvh;
+    width: 100dvw;
+    display: grid;
+    align-items: center;
+}
+
+.card{
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 30px;
+    width: 700px;
+    box-shadow: 0 0 10px rgba(0, 0, 15, 0.356);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn{
+    font-family: "Montagu slab", serif;
+    width: 25%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #3265d3;
+    justify-items: center;
+    color: white;
+    border-radius: 50px;
+    border: #020747 solid 5px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    transition: all 0.2s ease-in-out;
+}
+
+.input{
+    font-family: "Montagu slab", serif;
+    font-size: 30px;
+    text-indent: 10px;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    color:#020747;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.label{
+    font-weight: 100px;
+    color: rgb(99, 98, 98);
+}
+
+.select{
+    font-family: "Montagu slab", serif;
+    text-indent: 5px;
+    height: 25px;
+    width: 70px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.select:hover{
+    cursor: pointer;
+    background-color: #083a55;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out;
+}
+
+.result-box {
+    font-family: "Montagu slab", serif;
+    font-size: 30px;
+    text-indent: 10px;
+    font-weight: 700;
+    color: #020747; 
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(41, 6, 139, 0.164);
+    background-color: #ffffff;
+    display: flex;
+    border: 1px solid #ccc;
+    align-items: center;
+    justify-content: start; 
+}
+
+.mesh-gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .blob {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.5;
+    mix-blend-mode: screen;
+  }
+  
+  .blob1 {
+    background: #05002e;
+    top: 10%;
+    left: 15%;
+  }
+  .blob2 {
+    background: #154797;
+    top: 30%;
+    left: 50%;
+  }
+  .blob3 {
+    background: #000a0e;
+    top: 60%;
+    left: 30%;
+  }
+
